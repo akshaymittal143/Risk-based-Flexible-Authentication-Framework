@@ -3,6 +3,7 @@
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Research](https://img.shields.io/badge/Research-IEEE%20Conference-orange.svg)](https://ieee.org)
+[![Status](https://img.shields.io/badge/Status-Ready%20for%20Submission-brightgreen.svg)](https://ieee.org)
 
 A comprehensive implementation of a dual-agent authentication framework using AI agents for adaptive risk-based authentication. This repository contains the proof-of-concept implementation, quantitative evaluation, and experimental results for the IEEE conference paper.
 
@@ -99,68 +100,33 @@ risk-based-auth-framework/
 ├── README.md                    # This file
 ├── requirements.txt             # Python dependencies
 ├── LICENSE                      # MIT License
-├── .gitignore                   # Git ignore file
+├── CONTRIBUTING.md              # Contribution guidelines
 ├── poc_implementation.py        # Main framework implementation
-├── quantitative_evaluation.py   # Evaluation and benchmarking
+├── quantitative_evaluation.py   # Performance evaluation
 ├── generate_figures.py          # Figure generation for paper
 ├── evaluation_results.json      # Detailed evaluation results
-├── examples/                    # Example usage and demos
-│   ├── basic_usage.py
-│   └── advanced_configuration.py
-├── tests/                       # Unit tests
-│   ├── test_ltm_agent.py
-│   ├── test_stm_agent.py
-│   └── test_risk_model.py
+├── data/                        # Sample datasets
 ├── docs/                        # Documentation
-│   ├── api.md
-│   ├── architecture.md
-│   └── performance.md
-└── data/                        # Sample data and results
-    ├── sample_transactions.json
-    └── performance_metrics.json
+├── examples/                    # Usage examples
+├── tests/                       # Unit tests
+└── auth_framework_env/          # Virtual environment (gitignored)
 ```
 
-## 🔧 Core Components
+## 🔬 Research Paper
 
-### 1. Customer Behavior Data Lake
-```python
-from poc_implementation import CustomerBehaviorDataLake
+This implementation supports the IEEE conference paper: **"Adaptive Dual-Agent Authentication Framework: Balancing Security and User Experience in Digital Banking"**
 
-data_lake = CustomerBehaviorDataLake()
-data_lake.add_behavior_event(customer_id, event_type, event_data, timestamp)
-```
+### Key Contributions:
+1. **Dual-Agent Authentication Framework**: Novel LTM and STM agent architecture
+2. **Behavioral Risk Scoring Model**: Machine learning-based risk assessment
+3. **Context-Aware Authentication Orchestration**: Dynamic security adjustment
+4. **Comprehensive Empirical Evaluation**: 10,620 transactions with 1,000 customer profiles
 
-### 2. Risk Scoring Model
-```python
-from poc_implementation import RiskScoringModel
-
-risk_model = RiskScoringModel()
-risk_level, confidence = risk_model.predict_risk(customer_profile, transaction)
-```
-
-### 3. LTM Agent (Long-Term Memory)
-```python
-from poc_implementation import LTMAgent
-
-ltm_agent = LTMAgent(data_lake, risk_model)
-analysis = ltm_agent.analyze_customer_behavior(customer_id)
-```
-
-### 4. STM Agent (Short-Term Memory)
-```python
-from poc_implementation import STMAgent
-
-stm_agent = STMAgent(ltm_agent)
-evaluation = stm_agent.evaluate_transaction(transaction_context)
-```
-
-### 5. Authentication Orchestrator
-```python
-from poc_implementation import AuthenticationOrchestrator
-
-orchestrator = AuthenticationOrchestrator(stm_agent, data_lake)
-result = orchestrator.process_authentication_request(transaction)
-```
+### Experimental Results:
+- **Dataset**: 1,000 customer profiles, 10,620 transactions
+- **Fraud Detection**: 50.95% detection rate, 9.43% false positive rate
+- **Performance**: 0.000012s average processing time
+- **User Experience**: 47.36% authentication friction reduction
 
 ## 📈 Performance Evaluation
 
@@ -219,13 +185,14 @@ python tests/test_risk_model.py
 - [Architecture Guide](docs/architecture.md) - System design and components
 - [Performance Analysis](docs/performance.md) - Detailed performance metrics
 
+## 📄 Research Paper
 
-The paper includes:
-- Comprehensive literature review
-- Detailed methodology
-- Quantitative evaluation results
-- Comparative analysis
-- Future research directions
+The associated IEEE conference paper includes:
+- Comprehensive literature review with 21 peer-reviewed references
+- Detailed methodology and dual-agent architecture
+- Quantitative evaluation with synthetic dataset
+- Comparative analysis against traditional MFA and rule-based systems
+- Future research directions and implications
 
 ## 🤝 Contributing
 
@@ -257,4 +224,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **⭐ Star this repository if you find it useful!**
 
-**🔬 Research Status**: ✅ Ready for IEEE Conference Submission 
+**🔬 Research Status**: ✅ **Ready for IEEE Conference Submission** - Paper successfully prepared with 6 pages, proper formatting, verified references, and comprehensive evaluation results. 
