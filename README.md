@@ -57,8 +57,8 @@ This framework addresses the critical challenge of balancing security and user e
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/risk-based-auth-framework.git
-   cd risk-based-auth-framework
+   git clone https://github.com/akshaymittal143/Risk-based-Flexible-Authentication-Framework.git
+   cd Risk-based-Flexible-Authentication-Framework
    ```
 
 2. **Create virtual environment**
@@ -219,12 +219,6 @@ python tests/test_risk_model.py
 - [Architecture Guide](docs/architecture.md) - System design and components
 - [Performance Analysis](docs/performance.md) - Detailed performance metrics
 
-## 🔬 Research Paper
-
-This implementation supports the IEEE conference paper:
-- **Title**: "Risk-based Flexible Authentication for Identity and Authentication System using AI-Agents"
-- **Conference**: IEEE Conference Proceedings
-- **Year**: 2024
 
 The paper includes:
 - Comprehensive literature review
@@ -256,21 +250,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Contact
 
 - **Research Paper**: [IEEE Conference Proceedings]
-- **GitHub Issues**: [Create an issue](https://github.com/yourusername/risk-based-auth-framework/issues)
-- **Email**: [your-email@domain.com]
-
-## 📊 Citation
-
-If you use this work in your research, please cite:
-
-```bibtex
-@inproceedings{risk_based_auth_2024,
-  title={Risk-based Flexible Authentication for Identity and Authentication System using AI-Agents},
-  author={[Author Names]},
-  booktitle={IEEE Conference Proceedings},
-  year={2024}
-}
-```
+- **GitHub Issues**: [Create an issue](https://github.com/akshaymittal143/Risk-based-Flexible-Authentication-Framework/issues)
+- **Email**: [akshay.mittal@ieee.org]
 
 ---
 
